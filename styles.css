@@ -1,0 +1,156 @@
+ .body {
+            height: 120vh;
+            width: 100%;
+        }
+
+        .back {
+            background: url(image.png);
+            overflow-x: hidden;
+            /* height: 10vh; */
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            overflow: hidden;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: auto;
+            justify-items: center;
+
+        }
+
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+
+        .list {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .but {
+            margin-top: 30px;
+            font-size: x-large;
+            gap: 40px;
+        }
+
+        .login {
+            background-color: rgb(34, 24, 24);
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+            border-radius: 10px;
+            border: none;
+            padding: 2px 8px 2px 8px;
+        }
+
+        .signup {
+            color: rgb(34, 24, 24);
+            background-color: white;
+            font-weight: 400;
+            font-size: 14px;
+            border-radius: 10px;
+            border: none;
+            padding: 2px 8px 2px 8px;
+        }
+
+        .mid{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .burger {
+            height: 600px;
+            margin-right: 100px;
+        }
+
+        .left {
+            margin-top: 150px;
+            margin-left: 180px;
+            font-size: large;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        .name{
+            display: flex;
+            gap: 5px;
+        }
+        /* Mobile Responsive CSS */
+@media (max-width: 768px) {
+
+    .body {
+        height: auto;
+        width: 100%;
+    }
+
+    .back {
+        background: url(image.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .list {
+        display: none; /* Hide menu list on mobile */
+    }
+
+    .but {
+        margin-top: 0;
+        display: flex;
+        gap: 10px;
+        font-size: medium;
+    }
+
+    .login,
+    .signup {
+        font-size: 12px;
+        padding: 6px 12px;
+        border-radius: 8px;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .burger {
+        height: 300px;
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .left {
+        margin: 30px 15px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
